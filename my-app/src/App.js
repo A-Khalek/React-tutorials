@@ -5,15 +5,17 @@ import About from './components/About';
 import Error from './components/Error'
 import Services from './components/Services'
 import Navabr from './components/Navbar'
+import Post from './components/Post'
 function App() {
   return (
     <>
     <Router>
     <Navabr/>
       <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/servics" element={<Services />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/servics" element={<Services />}/>
+          <Route path="/post/:category/:subcategory" element={<Post/>} />
           <Route path="*" element={<Error />} />
         </Routes>
     </Router>

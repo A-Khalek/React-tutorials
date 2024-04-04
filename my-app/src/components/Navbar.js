@@ -5,9 +5,9 @@ export default function Navbar(){
     return(
         <nav>
             <ul>
-                <li> <NavLink to="/" activeStyle={{fontWeight:'bold',color:'red'}} end>  Home</NavLink> </li>
-                <li> <NavLink to="/about" activeStyle={{fontWeight:'bold',color:'red'}} end >About</NavLink> </li>
-                <li> <NavLink to="/servics" activeStyle={{fontWeight:'bold',color:'red'}} end>  Servics</NavLink> </li>
+                <li> <NavLink to="/">  Home</NavLink> </li>
+                <li> <NavLink to="/about" >About</NavLink> </li>
+                <li> <NavLink to="/servics">  Servics</NavLink> </li>
             </ul>
         </nav>
     );
