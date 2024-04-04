@@ -4,9 +4,12 @@ import Home from './components/Home';
 import About from './components/About';
 import Error from './components/Error'
 import Services from './components/Services'
+import Navabr from './components/Navbar'
 function App() {
   return (
+    <>
     <Router>
+    <Navabr/>
       <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
@@ -14,6 +17,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
     </Router>
+    </>
   );
 }
 
