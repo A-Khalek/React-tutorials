@@ -8,6 +8,7 @@ import Navabr from './components/Navbar'
 import Post from './components/Post'
 import Login from './components/Login'
 import Card from './components/Card'
+import Button from './components/Button/Button';
 
 
 function App() {
@@ -16,18 +17,17 @@ function App() {
     <>
 
     <Card/>
-    <Card/>
-    <Card/>
+    <Button/>
 
     <Router>
     <Navabr/>
       <Routes>
-          {/* <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/servics" element={<Services number="5" />} /> */}
-          {/* <Route path="/post/:category/:subcategory" element={<Post/>} />   this is send route parameters */}
-          {/* <Route path="/login" element={ isLogedIn ? <Login/> : <Home />} /> */}
-          {/* <Route path="*" element={<Error />} /> */}
+          <Route path="/servics" element={<Services number="5" />} />
+          <Route path="/post/:category/:subcategory" element={<Post/>} />   this is send route parameters
+          <Route path="/login" element={ isLogedIn ? <Login/> : <Home />} />
+          <Route path="*" element={<Error />} />
         </Routes>
     </Router>
     </>
