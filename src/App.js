@@ -9,13 +9,16 @@ import Post from './components/Post'
 import Login from './components/Login'
 import Card from './components/Card'
 import Button from './components/Button/Button';
-
+import Student from './components/Student';
 
 function App() {
   const isLogedIn = true;
   return (
     <>
 
+    <Student name="Raiyan" age={2} isStudent={true}/>
+    <Student name="Raiyan" age={20} isStudent={false}/>
+    <Student/>
     <Card/>
     <Button/>
 
