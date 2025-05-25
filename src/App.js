@@ -10,12 +10,14 @@ import Login from './components/Login'
 import Card from './components/Card'
 import Button from './components/Button/Button';
 import Student from './components/Student';
+import UserGreeting from './components/UserGreeting';
 
 function App() {
   const isLogedIn = true;
   return (
     <>
 
+    <UserGreeting isLoggedIn = {true} name="Raiyan"/>
     <Student name="Raiyan" age={2} isStudent={true}/>
     <Student name="Raiyan" age={20} isStudent={false}/>
     <Student/>
